@@ -8,45 +8,53 @@
         background-color: #eee;
       }
 
+      .circle-wrapper {
+        height: 450px;
+        margin: 0 auto;
+        position: relative;
+        width: 450px;
+      }
+
       @-webkit-keyframes moving {
         0% {
-          left: 0;
+          left: -90px;
           top: 10px;
         }
         33% {
           left: 100px;
-          top: 80px;
+          top: 60px;
         }
         66% {
-          left: 150px;
+          left: 50px;
           top: 50px;
         }
         76% {
-          left: 200px;
-          top: 100px;
+          left: 10px;
+          top: 345px;
         }
         100% {
-          left: 250px;
+          left: -110px;
           top: 100px;
+        }op: 100px;
         }
       }
 
       @keyframes moving {
         0% {
-          left: 0;
+          left: -90px;
           top: 10px;
         }
         33% {
           left: 100px;
-          top: 80px;
+          top: 60px;
         }
         66% {
-          left: 150px;
+          left: 50px;
           top: 50px;
         }
         76% {
-          left: 40px;
-          top: 360px;
+          left: 10px;
+          top: 345px;
         }
         100% {
           left: -110px;
@@ -91,6 +99,8 @@
       var yada = new Yada();
       yada.yada();
     </script>
-    <div class="circle"></div>
+    <div class="circle-wrapper">
+      <div class="circle"></div>
+    </div>
   </body>
 </html>
