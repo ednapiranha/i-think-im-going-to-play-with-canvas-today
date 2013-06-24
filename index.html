@@ -9,57 +9,74 @@
       }
 
       .circle-wrapper {
-        height: 450px;
+        border-radius: 510px;
+        height: 510px;
         margin: 0 auto;
+        overflow: hidden;
         position: relative;
-        width: 450px;
+        width: 510px;
       }
 
       @-webkit-keyframes moving {
         0% {
-          left: -90px;
-          top: 10px;
+          left: -130px;
+          top: 30px;
         }
         33% {
-          left: 100px;
-          top: 60px;
+          left: 120px;
+          top: 90px;
         }
         66% {
-          left: 50px;
+          left: 10px;
           top: 50px;
         }
         76% {
-          left: 10px;
-          top: 345px;
+          left: 50px;
+          top: 325px;
         }
         100% {
           left: -110px;
           top: 100px;
-        }op: 100px;
         }
       }
 
       @keyframes moving {
         0% {
-          left: -90px;
-          top: 10px;
+          left: -130px;
+          top: 30px;
         }
         33% {
-          left: 100px;
-          top: 60px;
+          left: 120px;
+          top: 90px;
         }
         66% {
-          left: 50px;
+          left: 10px;
           top: 50px;
         }
         76% {
-          left: 10px;
-          top: 345px;
+          left: 50px;
+          top: 325px;
         }
         100% {
           left: -110px;
           top: 100px;
         }
+      }
+
+      h1 {
+        color: #fff;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 82px;
+        height: 450px;
+        letter-spacing: -2px;
+        line-height: 70px;
+        left: 10px;
+        margin: 0 auto;
+        opacity: 0.6;
+        padding-top: 75px;
+        position: absolute;
+        text-align: center;
+        width: 450px;
       }
 
       .circle {
@@ -85,8 +102,7 @@
     <script type="text/javascript">
       var canvas = document.createElement('canvas');
       canvas.id = 'ithinkimgoingtoplaywithcanvastoday';
-      canvas.width = 450;
-      canvas.height = 450;
+      canvas.width = canvas.height = 450;
 
       document.body.appendChild(canvas);
 
@@ -100,6 +116,7 @@
       yada.yada();
     </script>
     <div class="circle-wrapper">
+      <h1>I think I'm going to play with canvas today</h1>
       <div class="circle"></div>
     </div>
   </body>
