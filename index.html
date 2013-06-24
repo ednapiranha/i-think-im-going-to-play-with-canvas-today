@@ -8,13 +8,26 @@
         background-color: #eee;
       }
 
+      a {
+        display: block;
+        margin: 0 auto;
+        text-decoration: none;
+        width: 450px;
+      }
+
+      a:hover h1 {
+        color: #c2fa2a;
+        text-shadow: #fff 8px 8px 0;
+        -webkit-transition: 0.8s;
+        transition: 0.8s;
+      }
+
       .circle-wrapper {
-        border-radius: 510px;
-        height: 510px;
+        height: 450px;
         margin: 0 auto;
         overflow: hidden;
         position: relative;
-        width: 510px;
+        width: 450px;
       }
 
       @-webkit-keyframes moving {
@@ -66,11 +79,11 @@
       h1 {
         color: #fff;
         font-family: Helvetica, Arial, sans-serif;
-        font-size: 82px;
+        font-size: 79px;
         height: 450px;
-        letter-spacing: -2px;
+        letter-spacing: -3px;
         line-height: 70px;
-        left: 10px;
+        left: -20px;
         margin: 0 auto;
         opacity: 0.6;
         padding-top: 75px;
@@ -115,9 +128,11 @@
       var yada = new Yada();
       yada.yada();
     </script>
-    <div class="circle-wrapper">
-      <h1>I think I'm going to play with canvas today</h1>
-      <div class="circle"></div>
-    </div>
+    <a href="https://github.com/ednapiranha/i-think-im-going-to-play-with-canvas-today">
+      <div class="circle-wrapper">
+        <h1>I think I'm going to play with canvas today</h1>
+        <div class="circle"></div>
+      </div>
+    </a>
   </body>
 </html>
