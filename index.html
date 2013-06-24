@@ -11,6 +11,7 @@
       a {
         display: block;
         margin: 0 auto;
+        position: relative;
         text-decoration: none;
         width: 450px;
       }
@@ -83,13 +84,14 @@
         height: 450px;
         letter-spacing: -3px;
         line-height: 70px;
-        left: -20px;
+        left: 0;
         margin: 0 auto;
         opacity: 0.6;
         padding-top: 75px;
         position: absolute;
         text-align: center;
         width: 450px;
+        z-index: 2;
       }
 
       .circle {
@@ -101,13 +103,32 @@
         width: 100px;
         -webkit-animation: moving 1s ease-in-out -1s infinite alternate;
         animation: moving 1s ease-in-out -1s infinite alternate;
+        z-index: 2;
+      }
+
+      .circle-shadow {
+        background-color: #fff;
+        border-radius: 450px;
+        height: 450px;
+        left: 0;
+        position: absolute;
+        width: 450px;
+        z-index: 1;
+      }
+
+      a:hover .circle-shadow {
+        left:35px;
+        top: 35px;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
       }
 
       canvas {
         border-radius: 450px;
-        left: -250px;
+        left: -225px;
         margin-left: 50%;
         position: absolute;
+        z-index: 2;
       }
     </style>
   </head>
@@ -129,6 +150,7 @@
       yada.yada();
     </script>
     <a href="https://github.com/ednapiranha/i-think-im-going-to-play-with-canvas-today">
+      <div class="circle-shadow"></div>
       <div class="circle-wrapper">
         <h1>I think I'm going to play with canvas today</h1>
         <div class="circle"></div>
