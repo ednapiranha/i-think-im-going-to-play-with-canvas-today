@@ -2,9 +2,78 @@
 <html>
   <head>
     <title>I think I'm going to play with canvas today (today is relative)</title>
+    <script type="text/javascript" src="ithinkimgoingtoplaywithcanvastoday.js"></script>
+    <style type="text/css">
+      body {
+        background-color: #eee;
+      }
+
+      @-webkit-keyframes moving {
+        0% {
+          left: 0;
+          top: 10px;
+        }
+        33% {
+          left: 100px;
+          top: 80px;
+        }
+        66% {
+          left: 150px;
+          top: 50px;
+        }
+        76% {
+          left: 200px;
+          top: 100px;
+        }
+        100% {
+          left: 250px;
+          top: 100px;
+        }
+      }
+
+      @keyframes moving {
+        0% {
+          left: 0;
+          top: 10px;
+        }
+        33% {
+          left: 100px;
+          top: 80px;
+        }
+        66% {
+          left: 150px;
+          top: 50px;
+        }
+        76% {
+          left: 40px;
+          top: 360px;
+        }
+        100% {
+          left: -110px;
+          top: 100px;
+        }
+      }
+
+      .circle {
+        background-color: rgba(42, 169, 250, 0.4);
+        border-radius: 100px;
+        height: 100px;
+        margin-left: 40%;
+        position: absolute;
+        width: 100px;
+        -webkit-animation: moving 1s ease-in-out -1s infinite alternate;
+        animation: moving 1s ease-in-out -1s infinite alternate;
+      }
+
+      canvas {
+        border-radius: 450px;
+        left: -250px;
+        margin-left: 50%;
+        position: absolute;
+      }
+    </style>
   </head>
   <body>
-    <script type="text/javascript" src="ithinkimgoingtoplaywithcanvastoday.js"></script>
     <script type="text/javascript">
       var canvas = document.createElement('canvas');
       canvas.id = 'ithinkimgoingtoplaywithcanvastoday';
@@ -22,13 +91,6 @@
       var yada = new Yada();
       yada.yada();
     </script>
-    <style type="text/css">
-      canvas {
-        border-radius: 450px;
-        left: -250px;
-        margin-left: 50%;
-        position: absolute;
-      }
-    </style>
+    <div class="circle"></div>
   </body>
 </html>
